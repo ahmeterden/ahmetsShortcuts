@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right|center"
+    android:orientation="vertical"
+    tools:context="com.ahmeterden.ahmet.ahmetsShortcuts.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="top|center"
+            android:inputType="none"
+            android:onClick="myTestAction"
+            android:text="AHMET'S TOGGLER"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/tvNotlar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="top|center"
+            android:inputType="none"
+            android:text="Some functions requires root access! \n And don't forget to add the widget to home screen!\nIn MIUI disable &quot;Vibrate in silent mode&quot;\n"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/tvBrightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Brightness"
+            android:textColor="@android:color/black" />
+
+        <SeekBar
+            android:id="@+id/seekBar_autoBrightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:min="1" />
+
+        <TextView
+            android:id="@+id/tvRingtoneVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ringtone Volume"
+            android:textColor="@android:color/black" />
+
+        <SeekBar
+            android:id="@+id/seekBar_ringtoneVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:min="1" />
+
+        <TextView
+            android:id="@+id/tvAlarmVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Alarm Volume"
+            android:textColor="@android:color/black" />
+
+        <SeekBar
+            android:id="@+id/seekBar_alarmVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:min="1" />
+
+        <TextView
+            android:id="@+id/tvMediaVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Media Volume"
+            android:textColor="@android:color/black" />
+
+        <SeekBar
+            android:id="@+id/seekBar_MediaVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:min="1" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btn_readSms"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:onClick="readSms"
+                    android:text="(TEST) Read SMS" />
+
+                <Button
+                    android:id="@+id/btn_syncGoogle"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:onClick="syncGoogle"
+                    android:text="Manuel Sync Google" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btn_settings"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:onClick="openSettings"
+                    android:text="Settings" />
+
+                <Button
+                    android:id="@+id/btn_wifidata"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:onClick="toggleWifiData"
+                    android:text="Toggle WiFi/Data" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btn_calculator"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:enabled="true"
+                    android:onClick="openCalculator"
+                    android:text="Calc" />
+
+                <Button
+                    android:id="@+id/btn_recentapps"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:onClick="openRecentsMenu"
+                    android:text="Recents" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvProfiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profiles"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+
+
+                <Button
+                    android:id="@+id/btn_ring_realdead"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/ic_do_not_disturb_on_black_24dp"
+                    android:onClick="toggleRingRealDead" />
+
+                <Button
+                    android:id="@+id/btn_ring_dead"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/ic_do_not_disturb_black_24dp"
+                    android:onClick="toggleRingDead" />
+
+                <Button
+                    android:id="@+id/btn_ring_vibrate"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/ic_vibration_black_24dp"
+                    android:onClick="toggleRingVibrate" />
+
+                <Button
+                    android:id="@+id/btn_ring_work"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/ic_work_black_24dp"
+                    android:onClick="toggleRingWork" />
+
+                <Button
+                    android:id="@+id/btn_ring_max"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/ic_filter_vintage_black_24dp"
+                    android:onClick="toggleRingMax" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvToggles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toggles"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+
+                <Button
+                    android:id="@+id/btn_autoBrightness"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/ic_brightness_auto_black_24dp"
+                    android:onClick="toggleAutoBrightness" />
+
+                <Button
+                    android:id="@+id/btn_torch"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/ic_highlight_black_24dp"
+                    android:onClick="toggleTorch" />
+
+                <Button
+                    android:id="@+id/btn_gps"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/ic_gps_fixed_black_24dp"
+                    android:onClick="toggleGps" />
+
+                <Button
+                    android:id="@+id/btn_wifi"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/ic_wifi_black_24dp"
+                    android:onClick="toggleWifi" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+
+                <Button
+                    android:id="@+id/btn_hotspot"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/ic_wifi_tethering_black_24dp"
+                    android:onClick="toggleHotspot" />
+
+                <Button
+                    android:id="@+id/btn_orientation"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/ic_screen_rotation_black_24dp"
+                    android:onClick="toggleOrientation" />
+
+                <Button
+                    android:id="@+id/btn_bluetooth"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/ic_bluetooth_black_24dp"
+                    android:onClick="toggleBluetooth" />
+
+                <Button
+                    android:id="@+id/btn_data"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/ic_signal_cellular_4_bar_black_24dp"
+                    android:onClick="toggleData" />
+            </TableRow>
+
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
