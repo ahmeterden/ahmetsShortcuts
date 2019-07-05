@@ -890,7 +890,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);*/
 
             Intent intent = new Intent();
-            intent.setClassName("com.miui.calculator", "com.miui.calculator.cal.CalculatorActivity");
+            intent.setClassName("com.miui.calculator", "com.miui.calculator.cal.CalculatorTabActivity");
             startActivity(intent);
 
         }
